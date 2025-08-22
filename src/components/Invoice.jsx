@@ -29,13 +29,13 @@ const Invoice = () => {
         </div>
         <div className="grid grid-cols-2 gap-x-1 gap-y-2 text-sm me-7">
           <span className="text-gray-400 font-medium">INVOICE</span>
-          <span className="text-gray-600 text-left">OC-2508-0038</span>
+          <span className=" text-left">OC-2508-0038</span>
           <span className="text-gray-400 font-medium">DATE</span>
-          <span className="text-gray-600 text-left">13/08/2025</span>
+          <span className="text-left">13/08/2025</span>
           <span className="text-gray-400 font-medium">TERMS</span>
-          <span className="text-gray-600 text-left">Due on</span>
+          <span className="text-left">Due on</span>
           <span className="text-gray-400 font-medium">DUE DATE</span>
-          <span className="text-gray-600 text-left">13/08/2025</span>
+          <span className="text-left">13/08/2025</span>
         </div>
       </div>
 
@@ -43,13 +43,14 @@ const Invoice = () => {
       <div className="mb-10">
         <table className="w-full border-b-2 border-dashed border-gray-300">
           <thead>
-            <tr className="bg-gray-200 text-gray-400 text-sm font-semibold">
-              <th className="p-3 text-center w-15">SVC DATE</th>
-              <th className="p-3 text-center w-37">ACTIVITY</th>
-              <th className="p-3 text-center w-55">DESCRIPTION</th>
-              <th className="p-3 text-center w-25">QTY</th>
-              <th className="p-3 text-center w-17">RATE</th>
-              <th className="p-3 text-right w-16">AMOUNT</th>
+            <tr className="bg-gray-200 text-gray-400 text-sm ">
+              <th className="p-3 text-center w-15 font-extrabold">SVC DATE</th>
+              <th className="p-3 text-center w-37 font-extrabold">ACTIVITY</th>
+              <th className="p-3 text-center w-55 font-extrabold">DESCRIPTION</th>
+              <th className="p-3 text-center w-25 font-extrabold">QTY</th>
+              <th className="p-3 text-center w-17 font-extrabold">RATE</th>
+              <th className="p-3 text-center w-17 font-extrabold">RATE</th>
+              <th className="p-3 text-right w-16 font-extrabold">AMOUNT</th>
             </tr>
           </thead>
           <tbody>
@@ -87,7 +88,7 @@ const Invoice = () => {
                 amount: 'RM150.00',
               },
             ].map((row, index) => (
-              <tr key={index} className="text-sm text-center text-gray-600">
+              <tr key={index} className="text-sm text-center">
                 <td className="p-3 align-top">{row.date}</td>
                 <td className="p-3 align-top">{row.activity}</td>
                 <td className="p-3 align-top">{row.description}</td>
@@ -105,15 +106,15 @@ const Invoice = () => {
         <h3 className="text-lg font-semibold text-gray-800 mb-3">Additional Expenses</h3>
         <table className="w-full">
           <thead>
-            <tr className="bg-gray-200 text-gray-400 text-sm font-semibold text-right">
-              <th className="w-30 text-center">Item</th>
-              <th className="ps-3 w-40 ">Name</th>
-              <th className="ps-3 w-40">QTY</th>
-              <th className="pe-5 w-50">RATE</th>
-              <th className="p-3">AMOUNT</th>
+            <tr className="bg-gray-200 text-gray-400 text-sm text-right">
+              <th className="w-30 text-center font-extrabold">Item</th>
+              <th className="ps-3 w-40 font-extrabold">Name</th>
+              <th className="ps-3 w-40 font-extrabold">QTY</th>
+              <th className="pe-5 w-50 font-extrabold">RATE</th>
+              <th className="p-3 font-extrabold">AMOUNT</th>
             </tr>
           </thead>
-          <tbody className="text-sm text-gray-600 text-right">
+          <tbody className="text-sm text-right">
             {[
               { item: 1, name: 'Box', qty: 1, rate: 'RM33.00', amount: 'RM33.00' },
               { item: 2, name: 'Fefe', qty: 1, rate: 'RM3.00', amount: 'RM3.00' },

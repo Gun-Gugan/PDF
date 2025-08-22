@@ -6,7 +6,7 @@ const InvoiceTwo = () => {
     <div className="w-full border-b-2 border-dashed border-gray-300">
       <table >
         
-        <tbody className="text-center text-sm text-right">
+        <tbody className="text-right text-sm ">
           <tr className="flex">
             <td className="p-3 w-20">6</td>
             <td className="p-3 w-50">dbf</td>
@@ -57,7 +57,7 @@ const InvoiceTwo = () => {
           <span className="text-left text-gray-400 font-extrabold">BAL DUE</span>
           <span>RM507.00</span>
         </div>
-        <div className="text-yellow-500 text-xl font-extrabold text-right font-bold me-2">PARTIALLY PAID</div>
+        <div className="text-yellow-500 text-xl font-extrabold text-right me-2">PARTIALLY PAID</div>
       </div>
 
       {/* Payment Instructions */}
@@ -71,14 +71,14 @@ const InvoiceTwo = () => {
           <p>Bank Account No: XXX</p>
         </div>
         <div className="right-26 rounded absolute -translate-y-42">
-          <p className="font-bold">DuitNow QR</p>
+          <p className="text-md">DuitNow QR</p>
           <p>Code:</p>
           <p className="ms-5 text-gray-500 mt-2">No QR</p>
         </div>
       </div>
 
       {/* Footer */}
-      <div className="mt-4 text-md text-gray-600 text-center mt-110 tracking-wider">
+      <div className="text-md text-gray-600 text-center mt-110 tracking-wider">
         <p>For any clarifications please email us at ishinero106@gmail.com quoting our invoice number.</p>
         <p>Thank you for entrusting us with the Care of your premises</p>
         <p>iShine Cleaning 4u Services is a brand owned and managed by iShine Cleaning 4u Services</p>
