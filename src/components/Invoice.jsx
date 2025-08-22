@@ -49,7 +49,6 @@ const Invoice = () => {
               <th className="p-3 text-center w-55 font-extrabold">DESCRIPTION</th>
               <th className="p-3 text-center w-25 font-extrabold">QTY</th>
               <th className="p-3 text-center w-17 font-extrabold">RATE</th>
-              <th className="p-3 text-center w-17 font-extrabold">RATE</th>
               <th className="p-3 text-right w-16 font-extrabold">AMOUNT</th>
             </tr>
           </thead>
